@@ -1,8 +1,8 @@
-import random
-print('Hello')
-print("Hi QA class!")
-print("My name is:",end=" ")
-print('Alex')
+# import random
+# print('Hello')
+# print("Hi QA class!")
+# print("My name is:",end=" ")
+# print('Alex')
 # помощь
 # help()
 
@@ -70,6 +70,7 @@ print('Alex')
 # Почему не работает?
 
 # x=input("Введите число 1,2 или 3: ")
+# print(type(x))
 # if x==1:
 #     print("один")
 # elif x==2:
@@ -78,3 +79,19 @@ print('Alex')
 #     print("три")
 # else:
 #     print("другое число")
+# number=int(input("введите число:"))
+# if number % 2 == 0:
+#     print("Число " + str(number) + " чётное.")
+
+# else:
+#     print("Число " + str(number) + " нечётное.")
+chislo = int(input("Введите число: "))
+if 10 <= chislo <= 99 and chislo // 10 == chislo % 10:
+    print("da")
+else:
+     print("net")
+
+# if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
+#     print(year, "год является високосным.")
+# else:
+#     print(year, "год не является високосным.")
