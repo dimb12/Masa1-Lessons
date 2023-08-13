@@ -1,97 +1,67 @@
-# import random
-# print('Hello')
-# print("Hi QA class!")
-# print("My name is:",end=" ")
-# print('Alex')
-# помощь
-# help()
+# def calculate_change(amount):
+# def calculate_change(amount):
+#     denominations = [200, 100, 50, 20]
+#     counts = [0] * len(denominations)
 
-# переменные
-# num=2
-# print(type(num))
-# print(num)
+#     for i, denom in enumerate(denominations):
+#         while amount >= denom:
+#             amount -= denom
+#             counts[i] += 1
 
-# логические
-# answer=True
-# print(type(answer))
-# print(2>1)
+#     if amount == 0:
+#         for denom, count in zip(denominations, counts):
+#             print(f"{denom}x{count}", end=", ")
+#     else:
+#         print("Извините, но размен невозможен!")
 
-# числовые
-# a=22.5
-# b=30
-# c=a+b
 
-# print("a =",a)
-# print("b =",b)
-# print("c =",c)
+# summa = int(input("Введите сумму в шекелях: "))
+# calculate_change(summa)
 
-# print(type(c))
+# list = [1, '2', '3', 17, '5']
+# sum = 0
 
-# a=8
-# b=5
-# print(a+b)
-# print(a-b)
-# print(a*b)
-# print(a/b)
-# print(a%b)
-# print(a//b)
+# for i in list:
+# #     if i = str:
+# # i = int(i)
+#     sum += i
 
-# chislo = input("Введите число: ")
-# print("Ваше число:", chislo)
+# print("Сумма:", sum)
 
-# a, b, c, d = map (int, input("Введите 4 числа: ").split())
-# print("a=",a, "b=",b,"c=",c,"d=",d)
 
-# рандомальный номер
-# print("Random number from 1 to 100 is : ", int (random.random()*100))
-# print("Random number from 1 to 100 is : ", int(random.randrange(1,100)))
-# print("Random number from 1 to 100 is : ", str(random.randrange(1,100)))
+# my_list = [12, 33, 24, 7, 19]
+# # четные
+# for num in list:      
+#     if num % 2 == 0:
+#         print(num)
+# нечетные
+# for num in list:      
+#     if num %  == 0:
+#         print(num)
+# word = 'кот'
+# reversed_word = ''
+# for char in word:
+#     word1 = char + word1
+# print(reversed_word)
+# list = '0123456789'
+# delete = list[1:4] + list[6:-1]
+# print(delete)
+# a=75
+# b=93
+# x=a*b
+# y=a+b
+# print(a, "+"b = y)
+# print(a,"*",b = x)
+slovo = 'синхрофазотрон'
+letters_count = {}
 
-# Условия
-# x = 21
-# if x == 21:
-#     print("Yes, x is 21")
+for letter in slovo:
+    if letter in letters_count:
+        letters_count[letter] += 1
+    else:
+        letters_count[letter] = 1
 
-# if x == 21:
-# print("Yes, x is 21")
-
-# x = 20
-# if x != 21:
-#     print("Yes, x is not 21")
-
-# x = True
-# if x is True:
-#     print("Yes, x is True")
-
-# x = True
-# if x:
-#     print("Yes, x is True")
-
-# Почему не работает?
-
-# x=input("Введите число 1,2 или 3: ")
-# print(type(x))
-# if x==1:
-#     print("один")
-# elif x==2:
-#     print("два")
-# elif x==3:
-#     print("три")
-# else:
-#     print("другое число")
-# number=int(input("введите число:"))
-# if number % 2 == 0:
-#     print("Число " + str(number) + " чётное.")
-
-# else:
-#     print("Число " + str(number) + " нечётное.")
-chislo = int(input("Введите число: "))
-if 10 <= chislo <= 99 and chislo // 10 == chislo % 10:
-    print("da")
-else:
-     print("net")
-
-# if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
-#     print(year, "год является високосным.")
-# else:
-#     print(year, "год не является високосным.")
+print(f"Количество видов букв: {len(letters_count)}")
+print("Число вхождений каждой буквы:")
+for letter, count in letters_count.items():
+    print(f"{letter}: {count}")
